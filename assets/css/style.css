@@ -1,0 +1,212 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.12,
+* Autoprefixer: v10.4.4
+* Browsers: last 4 version
+*/
+
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+
+
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86%; 
+  margin: 0 auto;
+}
+
+/*=================================
+  main styling starts here
+=================================*/
+
+main { 
+  width: 40%;
+  margin: 10% auto 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: rgb(57, 96, 204);
+  border-radius: 15px;
+  color: #fff; 
+  font-family:'Roboto', sans-serif;
+}
+
+main .wrapper { padding: 10% 10% 10% 10%;}
+.input {display: -webkit-box;display: -ms-flexbox;display: flex;}
+
+main .wrapper h3 {
+  padding-bottom: 5%;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.weather-container {
+  padding: 5% 0;
+  font-size: 25px;
+}
+
+.inputs { display: -webkit-box; display: -ms-flexbox; display: flex;}
+
+input[type="text"]{
+  font-size: 18px;
+  border:0;
+  padding:10px;
+  border-radius: 10px 0 0 10px;
+  outline: 0;
+}
+
+input[type="submit"]{
+  font-size: 18px;
+  border:0;
+  padding:10px;
+  border-radius: 0 10px 10px 0;
+  cursor:pointer;
+}
+
+.temp, .city { 
+  font-size: 30px;
+}
+
+.main { font-size: 18px;}
+
+.input-error {
+  display: block;
+  visibility: hidden;
+}
+
+.black {background-color: #000;}
+.sunny { background-color: rgb(253, 185, 37);}
+.cloudy { background-color: #9bc5c3;}
+.rainy { background-color: rgb(209, 212, 214);}
+.thunderstorm { background-color: #717a7d}
+.rain { background-color: #3C424C}
+.drizzle { background-color: #5d6470}
+.smoke, .ash { background-color: #D3D2D3}
+.clouds { background-color: #c9caca}
+.clear { background-color: #87ceeb}
+.fog, .tornado, .haze { background-color: #6b696b}
+.snow, .mist { background-color: #EDEFF3}
+.weather-container { visibility: hidden;}
+.show { visibility: visible;}
+.hide { visibility: visible;}
+/*=================================
+  main styling ends here
+=================================*/
+
+
+
+
+
+
